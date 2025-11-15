@@ -1,0 +1,30 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    min-height: 100vh;
+    margin-top: 20vh;
+    
+}
+.left{
+    display: flex;
+    border: black solid 3px;
+    position: relative;
+    flex: 1;
+    color: black;
+    justify-self: center;
+}
+.middle{
+    display: flex;
+    position: relative;
+    flex: 1;
+    color: black;
+    border: black solid 3px;
+}
+.right{
+    display: flex;
+    position: relative;
+    flex: 1;
+    color: black;
+    border: black solid 3px;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>    
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="navlogin.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="features.css">     
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="explain.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                Student Finance 💵💰😎
+            </a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="second-b">Login</a>
+                <a href="signup.html" class="first-b">Sign Up</a>
+            </div> 
+        </div>
+    </nav>
+    <section class="section">
+        <div class="hero" id="hero">
+        <div class="ontop">
+            <div class="card2">
+                <div class="atext">
+                    <p>Our Why? why do you need us.....</p>
+                </div>
+                <div class="cards2">
+                    <div class="left-card">
+                        <img src="about images/iStock-1070910534-768x512.jpg" alt="">
+                    </div>
+                    <div class="right-card">
+                        <p>Our goal is simple:<br>Money management <strong>Clear, smart and stress free...</strong><br>Whether its tracking expenses, planning budgets, or discovering <br> better ways to save... <br>We help students stay on track...</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="section">
+        <div class="hero" id="hero3">
+        <div class="ontop">
+            <div class="card2">
+                <div class="atext2">
+                    <p>A Clear Mind.</p>
+                </div>
+                <div class="cards2">
+                    <div class="left-card">
+                        <img src="about images/finance-illustrative-images.jpg" alt="">
+                    </div>
+                    <div class="right-card">
+                        <p><strong>Less Stress, better focus</strong><br>When finances are organized students can<br>focused on studying, not <strong>worrying about money..</strong><br>Financial clarity builds mental clarity<br>Knowing where your money goes<br>reduces <strong>anxiety and improves decision making...</strong></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>   
+    <section class="section">
+        <div class="hero" id="hero33">
+        <div class="ontop">
+            <div class="card2">
+                <div class="atext2">
+                    <p>Plan.......</p>
+                </div>
+                <div class="cards2">
+                    <div class="left-card">
+                        <img src="about images/plan.jpg" alt="">
+                    </div>
+                    <div class="right-card">
+                        <p><strong>Plan with us, plan better</strong><br>let us plan with you, hand in hand...<br>we help you bring your plans <strong><br> LIFE..</strong><br>Financial clarity builds mental clarity<br>Knowing where your money will go<br>reduces <strong>anxiety and improves decision making...</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="hero" id="hero6">
+        <div class="ontop">
+            <div class="card2">
+            <div class="card2">
+                <div class="atext2">
+                    <p>Lets Track expenses For you...</p>
+                </div>
+                <div class="cards2">
+                    <div class="left-card">
+                        <img src="about images/img.jpg" alt="">
+                    </div>
+                    <div class="right-card">
+                        <p><strong>We manage your expenses</strong><br>students can spend knowing there expenses<br>are being tracked for their own good<strong> no more worrying about forgetting.</strong><br>Once again, Financial clarity builds mental clarity<br>Knowing where your money goes<br>reduces <strong>anxiety...</strong></p>
+                    </div>
+                </div>
+            </div>
+                   
+            </div>
+
+
+        </div>
+    </section>
+<!-- <section class="section">
+        <div class="hero" id="hero5">
+        <div class="ontop">
+            <div class="card2">
+
+            </div>
+
+                <div class="foot">
+                    <p>Coded by Geoffrey Musweu 2025 C</p>
+                </div>
+        </div>
+    </section>-->
+
+    <script>
+        const images =[
+            'images/IMG-20251021-WA0125.jpg',
+            'images/IMG-20251021-WA0129.jpg',
+            'images/IMG-20251021-WA0130.jpg',
+            'images/IMG-20251021-WA0132.jpg'
+        ];
+        let current = 0;
+        const hero = document.getElementById('hero');
+        function changeBackground(){
+            hero.style.backgroundImage = `url(${images[current]})`;
+            current = (current + 1) % images.length;
+        }
+        changeBackground();
+        setInterval(changeBackground, 3000)
+    </script>
+   <script>
+        const image =[
+            'images/IMG-20251021-WA0125.jpg',
+            'images/IMG-20251021-WA0129.jpg',
+            'images/IMG-20251021-WA0130.jpg',
+            'images/IMG-20251021-WA0132.jpg'
+        ];
+        let curren = 0;
+        const hero3 = document.getElementById('hero3');
+        function changeBackground(){
+            hero3.style.backgroundImage = `url(${image[curren]})`;
+            curren = (curren + 1) % image.length;
+        }
+        changeBackground();
+        setInterval(changeBackground, 3000)
+    </script>
+   <script>
+        const image3 =[
+            'images/IMG-20251021-WA0125.jpg',
+            'images/IMG-20251021-WA0129.jpg',
+            'images/IMG-20251021-WA0130.jpg',
+            'images/IMG-20251021-WA0132.jpg'
+        ];
+        let curren3 = 0;
+        const hero33 = document.getElementById('hero33');
+        function changeBackground(){
+            hero33.style.backgroundImage = `url(${image3[curren3]})`;
+            curren3 = (curren3 + 1) % image3.length;
+        }
+        changeBackground();
+        setInterval(changeBackground, 3000)
+    </script>
+   <script>
+        const image36 =[
+            'images/IMG-20251021-WA0125.jpg',
+            'images/IMG-20251021-WA0129.jpg',
+            'images/IMG-20251021-WA0130.jpg',
+            'images/IMG-20251021-WA0132.jpg'
+        ];
+        let curren36 = 0;
+        const hero336 = document.getElementById('hero6');
+        function changeBackground(){
+            hero336.style.backgroundImage = `url(${image36[curren36]})`;
+            curren36 = (curren36 + 1) % image36.length;
+        }
+        changeBackground();
+        setInterval(changeBackground, 3000)
+    </script>
+    <script>
+        const images5 =[
+            'images/IMG-20251021-WA0125.jpg',
+            'images/IMG-20251021-WA0129.jpg',
+            'images/IMG-20251021-WA0130.jpg',
+            'images/IMG-20251021-WA0132.jpg'
+        ];
+        let current5 = 0;
+        const hero5 = document.getElementById('hero5');
+        function changeBackground(){
+            hero5.style.backgroundImage = `url(${images5[current5]})`;
+            current5 = (current5 + 1) % images5.length;
+        }
+        changeBackground();
+        setInterval(changeBackground, 3000)
+    </script>
+</body>
+</html>

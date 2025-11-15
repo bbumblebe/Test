@@ -1,0 +1,36 @@
+.price{
+    position: absolute;
+    display: flex;
+    margin-top: 20vh;
+    justify-self: center;
+    justify-content: space-evenly;
+}
+.prices{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-self: center;
+}
+.free{
+    position: relative;
+    justify-content: center;
+    justify-self: center;
+    margin: 30px;
+    border: #3b82f6 0.5px solid;
+    backdrop-filter: blur(35px);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow: hidden;
+    text-align: center;
+    color: #f6faff;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+
+}
+.free:hover{
+    transform: translateY(-30px);
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+
+}

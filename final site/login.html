@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="navlogin.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="page-loader.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                Student Finance 💵💰😎
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="second-b">Login</a>
+                <a href="#" class="first-b">Sign Up</a>
+            </div> 
+        </div>
+    </nav>
+    <section class="hero">
+
+    </section>
+    <div class="login" id="login">
+        <div class="login-box">
+            <div class="text">Login</div>
+            <div class="username">
+                <input type="email" name="email" id="email" placeholder="Enter your Email">
+            </div>
+            <div class="password">
+                <input type="password" name="password" id="password" placeholder="Enter Password">
+            </div>
+            <div class="options">
+                <div class="Remember">
+                    <label>
+                        <input type="checkbox">
+                        Remember Me?
+                    </label>
+                </div>
+                <div class="forgot">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+            <div class="button">
+                <button>Login</button>
+            </div>
+            <div class="notes">
+                <p1>Dont have an account?</p1><a href="signup.html">Register</a>
+            </div>
+        </div>
+    </div>
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+    <script>
+        const container = document.getElementById("login")
+        container.addEventListener("click", function(){
+            window.history.back();
+        });
+    </script>
+
+</body>
+</html>

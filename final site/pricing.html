@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>    
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="navlogin.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="features.css">   
+    <link rel="stylesheet" href="footer.css">  
+    <link rel="stylesheet" href="price.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                Student Finance 💵💰😎
+            </a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="second-b">Login</a>
+                <a href="signup.html" class="first-b">Sign Up</a>
+            </div> 
+        </div>
+    </nav>
+    <section class="section">
+        <div class="hero" id="hero">
+        <div class="ontop">
+            <div class="card2">
+
+            </div>
+            <div class="price">
+                <div class="prices">
+                    <div class="free"><img src="images/R.jfif" alt="images" srcset="" width="300px" height="300px"><p>Free Version</p></div>
+                    <div class="free"><img src="images/paid.webp" alt="images" srcset="" width="300px" height="300px"><p> Paid Version (100% no Adds)</p></div>
+                    <div class="free"><img src="images/premium.webp" alt="images" srcset="" width="300" height="300px"><p>Premium Version (Lifetime no adds)</p></div>
+                </div>
+            </div>
+            <div class="foot">
+                    <p>Coded by Geoffrey Musweu 2025 C</p>
+            </div>
+        </div>
+    </section>   
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Student Finance</h3>
+            <p>Your trusted partner in managing student finances effectively.</p>
+            <ul class="socials">
+                <li><a href="#"><img src="images/facebook.png" alt="Facebook" width="30"></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt="Twitter" width="30"></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt="Instagram" width="30"></a></li>
+                <li><a href="#"><img src="images/linkedin.png" alt="LinkedIn" width="30"></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Student Finance Geoffrey Musweu. All rights reserved.</p>
+        </div>
+    </footer> 
+    <script>
+        const images =[
+            'images/IMG-20251021-WA0125.jpg',
+            'images/IMG-20251021-WA0129.jpg',
+            'images/IMG-20251021-WA0130.jpg',
+            'images/IMG-20251021-WA0132.jpg'
+        ];
+        let current = 0;
+        const hero = document.getElementById('hero');
+        function changeBackground(){
+            hero.style.backgroundImage = `url(${images[current]})`;
+            current = (current + 1) % images.length;
+        }
+        changeBackground();
+        setInterval(changeBackground, 3000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.signup{
+border: 2px solid white;
+padding: 30px 20px;
+border-radius: 9px;
+box-shadow: 5px 9px 9px .9px white;
+backdrop-filter: blur(9px);
+display: flex;
+flex-direction: column;
+}
+input{
+    border-radius: 25px;
+    background: none;
+    border: .2px solid rgb(255, 255, 255);
+    height: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0.5rem;
+}
+input::placeholder{
+    color: bisque;
+    margin: 2rem;
+    justify-self: center;
+}
+.not-new{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: antiquewhite;
+    font-weight: 900;
+}

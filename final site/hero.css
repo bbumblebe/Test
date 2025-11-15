@@ -1,0 +1,34 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+nav a.active{
+    color: #3b82f6;
+    border: #3b82f6 solid 5px;
+    border-radius: 25%;
+    
+}
+.hero{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1rem;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+.ontop{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+.content{
+    min-height: 50vh;
+    z-index: 200;
+}

@@ -1,0 +1,55 @@
+.contact-container {
+display: flex;
+max-width: 500px;
+flex-direction: column;
+justify-content: space-evenly;
+margin: auto;
+background: white;
+padding: 25px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+gap: 15px;
+}
+
+.contact-container h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.input-group {
+margin-bottom: 15px;
+}
+
+.input-group label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.input-group textarea {
+height: 120px;
+resize: none;
+}
+
+button {
+width: 100%;
+padding: 12px;
+background: #007bff;
+border: none;
+color: white;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover {
+background: #0056b3;
+}

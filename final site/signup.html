@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="navlogin.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="page-loader.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                Student Finance 💵💰😎
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="second-b">Login</a>
+                <a href="#" class="first-b">Sign Up</a>
+            </div> 
+        </div>
+    </nav>
+    <section class="hero">
+
+    </section>
+    <div class="login" id="form">
+        <div class="signup" id="signup">
+            <div class="signup-box">
+                <div class="text">
+                    sign-Up
+                </div>
+                <div class="Full-name">
+                    <label>
+                        <input type="text" name="Full-name" id="Full-name" placeholder="Enter your name">
+                    </label>
+                </div>
+                <div class="Email">
+                    <label>
+                        <input type="email" name="email" id="email" placeholder=" Enter your email">
+                    </label>
+                </div>
+                <div class="Password">
+                    <label>
+                        <input type="password" name="Password" id="Password" placeholder="Enter your password">
+                    </label>
+                </div>
+                <div class="university">
+                        <label>
+                            <input type="text" placeholder="Enter your university">
+                        </label>
+                </div>
+                <div class="button">
+                    <button type="submit">Create Account</button>
+                </div>
+                <div class="not-new">
+                    <div class="new">
+                        <a href="login.html">Not new? Login.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+    <script>
+        const container = document.getElementById("form")
+        container.addEventListener("click", function(){
+            window.history.back();
+        });
+    </script>
+
+</body>
+</html>
