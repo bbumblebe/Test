@@ -140,23 +140,27 @@
             const progressBar = document.getElementById('budgetProgress');
             const progressPercent = document.getElementById('progressPercent');
             const budgetStatus = document.getElementById('budgetStatus');
+            const bal = document.getElementById('balance');
             
             progressBar.style.width = `${Math.min(100, spentPercentage)}%`;
             progressPercent.textContent = `${spentPercentage.toFixed(0)}%`;
             
             // Update status indicatr
-            if (spentPercentage < 70) {
+            if (spentPercentage < 60) {
                 progressBar.className = 'progress-fill';
                 budgetStatus.className = 'status-indicator status-good';
                 budgetStatus.innerHTML = '<span>●</span> On Track';
+                bal.className = 'budget-amount-good';
             } else if (spentPercentage < 90) {
                 progressBar.className = 'progress-fill warning';
                 budgetStatus.className = 'status-indicator status-warning';
                 budgetStatus.innerHTML = '<span>●</span> Watch Spending';
+                bal.className = 'budget-amount-warning';
             } else {
                 progressBar.className = 'progress-fill danger';
                 budgetStatus.className = 'status-indicator status-danger';
                 budgetStatus.innerHTML = '<span>●</span> Over Budget - Stop Spending';
+                bal.className = 'budget-amount-stop';
             }
             
             // expenses list and chart

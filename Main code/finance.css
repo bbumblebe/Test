@@ -113,7 +113,33 @@ body {
             background-clip: text;
             margin-bottom: 0.5rem;
         }
-
+        .budget-amount-good {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #276300, #28d606);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+        .budget-amount-warning {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #f16f33, #ff8f25);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+        .budget-amount-stop {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ff1c1c, #a80000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
         .budget-subtitle {
             color: #64748b;
             font-size: 14px;
@@ -616,7 +642,7 @@ body {
             font-size: 36px;
             font-weight: 700;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            background: linear-gradient(135deg, #8c1197, #d81d1d);
     
             -webkit-text-fill-color: transparent;
         }
