@@ -30,8 +30,9 @@
 .button{
     border: 0.9px solid whitesmoke;
     border-radius: 5px;
-    background: whitesmoke;
-    color: #1d4ed8;
+    
+    background: linear-gradient( rgb(33, 28, 94));
+    color: whitesmoke;
     margin-top: 0;
     font-size: larger;
     text-decoration: none;
@@ -39,10 +40,11 @@
 }
 .button:hover{
     transform: translateY(-2px);
-    background: linear-gradient( rgb(33, 28, 94));
+    background: whitesmoke;
     box-shadow: 0 9px 60px rgba(rgb(174, 150, 212), rgb(148, 155, 148), rgb(150, 150, 180), 0.5);
     cursor: pointer;
-    color: whitesmoke;
+    
+    color: #1d4ed8;
 }
 .features{
     font-size: 0.6rem;
